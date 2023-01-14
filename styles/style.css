@@ -1,0 +1,97 @@
+/*----------------
+ Font family link 
+ -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/*---------------
+ Variable declare
+ ----------------*/
+:root{
+    --primary-color: #131313;
+    --secondary-color: #727272;
+}
+
+/*--------------
+  Global styles
+  -------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/*---------------
+  Nav-bar styles
+  ---------------*/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+}
+.logo-name{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.menu ul{
+    display: flex;
+    gap: 60px;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+/* -----Responsive design start -------*/
+
+/*----------------------------------
+ Responsive styles for Mobile device 
+ -----------------------------------*/
+@media only screen and (max-width: 576px) {
+    /* nav-bar styles */
+    .nav-bar{
+        display: block;
+        text-align: center;
+        padding: 9vw 0;
+    }
+    .logo-name{
+        font-size: 9vw;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 6vw;
+    }
+    .menu ul li a{
+        font-size: 3.5vw;
+    }
+}
+
+
+/*--------------------------------------------
+ Responsive styles for Tablet or Medium device 
+ ---------------------------------------------*/
+ @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .logo-name{
+        font-size: 6vw;
+    }
+    .menu ul{
+        display: flex;
+        gap: 20px;
+    }
+    .nav-bar{
+        padding: 50px 5vw;
+    }
+ }
