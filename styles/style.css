@@ -22,7 +22,17 @@ body{
     box-sizing: border-box;
     background: rgba(255, 144, 14, 0.1);
 }
-
+.btn-primary{
+    width: 170px;
+    height: 54px;
+    background-color:  #FF8B13;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    border: 0;
+    border-radius: 7px;
+    margin: 32px 0 50px 0;
+}
 /*---------------
   Nav-bar styles
   ---------------*/
@@ -51,6 +61,29 @@ body{
     font-weight: 500;
 }
 
+/* ------------
+  Banner styles
+  -------------*/
+.header-banner{
+    text-align: center;
+    padding-bottom: 45px;
+}
+.header-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 25px 0;
+}
+.header-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.header-banner .banner{
+    width: 75%;
+    border-radius: 5px;
+}
+
 
 
 
@@ -73,9 +106,27 @@ body{
         display: flex;
         justify-content: center;
         padding-top: 6vw;
+        gap: 40px;
     }
     .menu ul li a{
         font-size: 3.5vw;
+    }
+    /* banner responsive */
+    .header-title{
+        font-size: 9vw;
+        padding: 4vw 0;
+    }
+    .header-description{
+        font-size: 4vw;
+    }
+    .header-banner .banner{
+        width: 85%;
+    }
+    .btn-primary{
+        width: 150px;
+        height: 40px;
+        font-size: 4vw;
+        margin: 20px 0 30px 0;
     }
 }
 
@@ -93,5 +144,12 @@ body{
     }
     .nav-bar{
         padding: 50px 5vw;
+    }
+    .header-title{
+        font-size: 9vw;
+        padding: 4vw 0;
+    }
+    .header-description{
+        font-size: 4vw;
     }
  }
