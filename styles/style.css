@@ -20,7 +20,7 @@
 }
 body{
     box-sizing: border-box;
-    background: rgba(255, 144, 14, 0.1);
+    background: #FFFFFF;
 }
 .btn-primary{
     width: 170px;
@@ -36,6 +36,9 @@ body{
 /*---------------
   Nav-bar styles
   ---------------*/
+header{
+    background-color:  rgba(255, 144, 14, 0.1);
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -84,8 +87,42 @@ body{
     border-radius: 5px;
 }
 
-
-
+/*--------------------------
+  Quick list section styles
+---------------------------*/
+.quick-list{
+    display: flex;
+    padding: 80px 160px 160px;
+    align-items: center;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.img-container img{
+    width: 280px;
+}
+.quick-list-info{
+    padding-left: 50px;
+}
+.quick-list-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+}
+.quick-list-title span:first-of-type{
+    color: var(--secondary-color);
+}
+.quick-list-title span:last-of-type{
+    color: #FF900E;
+}
+.quick-list-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin: 20px 0 20px 0;
+}
 
 /* -----Responsive design start -------*/
 
@@ -128,6 +165,29 @@ body{
         font-size: 4vw;
         margin: 20px 0 30px 0;
     }
+    /* Quick list section responsive */
+    .quick-list{
+        flex-direction: column-reverse;
+        padding: 4vw 1vw;
+        justify-content: center;
+    }
+    .img-container{
+        display: grid;
+        gap: 2.5vw;
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .quick-list-info{
+        padding-left: 2vw;
+    }
+    .quick-list-title{
+        font-size: 9vw;
+    }
+    .quick-list-description{
+        font-size: 4.5vw;
+        margin: 15px 0 16px 0;
+    }
 }
 
 
@@ -151,5 +211,28 @@ body{
     }
     .header-description{
         font-size: 4vw;
+    }
+    /* Quick list section responsive */
+    .quick-list{
+        flex-direction: column-reverse;
+        padding: 4vw 1vw;
+        justify-content: center;
+    }
+    .img-container{
+        display: grid;
+        gap: 2.5vw;
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .quick-list-info{
+        padding-left: 2vw;
+    }
+    .quick-list-title{
+        font-size: 9vw;
+    }
+    .quick-list-description{
+        font-size: 4.5vw;
+        margin: 15px 0 16px 0;
     }
  }
