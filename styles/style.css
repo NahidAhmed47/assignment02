@@ -34,6 +34,10 @@ body{
     border-radius: 7px;
     margin: 32px 0 50px 0;
 }
+.btn-primary:hover{
+    transform: scale(1.05);
+    transition-duration: 0.6s;
+}
 /*---------------
   Nav-bar styles
   ---------------*/
@@ -397,7 +401,7 @@ Our sponsor section styles
         font-size: 4vw;
     }
     .header-banner .banner{
-        width: 85%;
+        width: 90%;
     }
     .btn-primary{
         width: 150px;
@@ -496,6 +500,9 @@ Our sponsor section styles
         flex-direction: column;
         align-items: center;
         gap: 30px ;
+    }
+    .experience-title{
+        font-size: 30px;
     }
     .sponsor-title{
         font-size: 9vw;
