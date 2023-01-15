@@ -286,6 +286,25 @@ Our sponsor section styles
     height: auto;
     filter: grayscale(100%);
 }
+
+/* ----------------------
+   footer section styles
+   ----------------------*/
+.footer{
+    width: 80%;
+    height: 90px;
+    background: #FFF4E7;
+    margin: 40px auto 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.footer-copyright{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
 /* -----Responsive design start -------*/
 
 /*----------------------------------
@@ -427,6 +446,12 @@ Our sponsor section styles
         flex-wrap: wrap;
         gap: 30px;
     }
+    .footer{
+        width: 90%;
+    }
+    .footer-copyright{
+        font-size: 3vw;
+    }
 }
 
 
@@ -529,5 +554,8 @@ Our sponsor section styles
     .sponsor-logo{
         flex-wrap: wrap;
         gap: 30px;
+    }
+    .footer-copyright{
+        font-size: 2.5vw;
     }
  }
