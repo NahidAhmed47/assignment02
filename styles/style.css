@@ -240,6 +240,11 @@ Love and enjoy features styles
     justify-content: center;
     align-items: center;
  }
+ .icon-box:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    background: #FFF4E7;
+ }
 .icon-box img{
     width: 45px;
     height: auto;
@@ -256,6 +261,58 @@ Love and enjoy features styles
     color: var(--secondary-color);
 }
 
+/* ----------------------------------
+Recently sold projects section styles 
+-------------------------------------*/
+.recently-sold{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.recently-sold-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+.projects-img{
+    display: flex;
+    justify-content: space-between;
+}
+.img-box{
+    width: 260px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+.img-box:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+ }
+.img-box img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.img-box figcaption{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(48, 45, 45);
+    margin: 20px 0 0 0;
+}
+.projects-see-more{
+    font-size: 20px;
+    color: rgba(219, 27, 27, 0.918);
+    margin-bottom: 120px;
+}
+.projects-see-more i{
+    padding-left: 5px;
+    padding-top: 5px;
+}
 /*------------------------
 Our sponsor section styles
 --------------------------*/
@@ -426,6 +483,14 @@ Our sponsor section styles
     .btn-experience > .ex-year{
         font-size: 6vw;
     }
+    /* recently sold projects section responsive */
+    .recently-sold-title{
+        font-size: 8vw;
+    }
+    .projects-img{
+        flex-direction: column;
+        align-items: center;
+    }
     /* experience section responsive */
     .icon-box-container{
         flex-direction: column;
@@ -532,6 +597,15 @@ Our sponsor section styles
     .features-img-container{
         width: 100%;
         height: 1250px;
+    }
+    
+    /* recently sold projects section responsive */
+    .recently-sold-title{
+        font-size: 8vw;
+    }
+    .projects-img{
+        flex-direction: column;
+        align-items: center;
     }
     
     /* ----btn section----- */
