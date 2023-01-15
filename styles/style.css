@@ -203,6 +203,57 @@ Love and enjoy features styles
     font-weight: 700;
 }
 
+/*------------------------
+ Experience section styles
+ ------------------------- */
+.experience-section{
+    width: 80%;
+    margin: 0 auto;
+}
+.experience-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 70px;
+}
+.experience-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 24px;
+}
+ .icon-box-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-bottom: 150px;
+ }
+ .icon-box{
+    width: 190px;
+    height: 200px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+.icon-box img{
+    width: 45px;
+    height: auto;
+}
+.icon-box .count{
+    font-size: 40px;
+    font-weight: 600;
+    color: #424242;
+    margin: 9px 0 5px 0;
+}
+.icon-box .experience-name{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
 /* -----Responsive design start -------*/
 
 /*----------------------------------
@@ -331,6 +382,12 @@ Love and enjoy features styles
     .btn-experience > .ex-year{
         font-size: 6vw;
     }
+    /* experience section responsive */
+    .icon-box-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px ;
+    }
 }
 
 
@@ -426,6 +483,8 @@ Love and enjoy features styles
         margin-top: 0;
         margin-left: -200px;
     }
-    .btn-experience{
+    .icon-box-container{
+        gap: 20px;
+        flex-wrap: wrap;
     }
  }
